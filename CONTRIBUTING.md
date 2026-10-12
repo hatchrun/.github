@@ -3,10 +3,20 @@
 Thanks for helping. A few rules keep the history clean and the supply
 chain trustworthy.
 
-## Before you start
+## Issues, not pull requests
 
-Open an issue for anything larger than a small fix, so the approach can be
-agreed before you write the code.
+Only collaborators can open pull requests in hatchrun repositories. A
+pull request from a fork runs code from an unknown author next to the
+project's CI and release pipeline, and hatchrun builds the images and
+binaries that run other people's jobs, so the project does not accept
+that risk.
+
+To report a bug or propose a change, open an issue. Describe what you
+saw, what you expected and how to reproduce it, or the problem a
+feature would solve. A maintainer writes the change. Security problems
+go through the private process in [SECURITY.md](SECURITY.md) instead.
+
+The rest of this document applies to collaborators.
 
 ## Commits
 
@@ -23,6 +33,8 @@ agreed before you write the code.
 
 ## Pull requests
 
+- Open an issue for anything larger than a small fix, so the approach
+  can be agreed before you write the code.
 - One logical change per pull request.
 - Write commit bodies and pull request descriptions the way Linux kernel
   commit messages are written: plain paragraphs wrapped at about 72
