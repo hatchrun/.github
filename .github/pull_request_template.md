@@ -1,11 +1,11 @@
-## Why
+<!--
+Write the description like a Linux kernel commit message, in plain
+paragraphs wrapped at about 72 columns, no headings:
 
-<!-- The problem this change solves. -->
+1. The problem: what is broken or missing, and why it matters.
+2. What the change does about it, and the trade-offs it makes.
+3. Anything a reviewer would not see from the diff, such as how it was
+   tested beyond CI.
 
-## How
-
-<!-- What the change does and any trade-offs. -->
-
-## Testing
-
-<!-- How you verified it. -->
+Do not restate the diff or list the files you touched.
+-->
