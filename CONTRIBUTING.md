@@ -21,7 +21,10 @@ agreed before you write the code.
 ## Pull requests
 
 - One logical change per pull request.
-- Explain why the change is needed and how you tested it.
+- Write commit bodies and pull request descriptions the way Linux kernel
+  commit messages are written: plain paragraphs wrapped at about 72
+  columns, starting with the problem, then what the change does about
+  it and the trade-offs. No headings, no restating the diff.
 - CI must pass. New behaviour needs tests.
 
 ## Licence
