@@ -10,13 +10,14 @@ agreed before you write the code.
 
 ## Commits
 
+- Sign every commit (GPG, SSH or S/MIME). Unsigned commits cannot be
+  merged.
 - Add a Developer Certificate of Origin sign-off to every commit with
   `git commit -s`. It certifies you have the right to submit the change
   under the project licence (https://developercertificate.org). The
   `dco` check fails a pull request with any commit missing a sign-off
-  that matches its author; fix it with `git rebase --signoff main` and
-  force-push.
-- Signing commits with GPG, SSH or S/MIME is welcome but not required.
+  that matches its author; fix it with `git rebase --signoff -S main`
+  and force-push.
 - Use Conventional Commits: `type(scope): subject`, for example
   `fix(agent): retry the runner config fetch`.
 
