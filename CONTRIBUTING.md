@@ -31,6 +31,16 @@ The rest of this document applies to collaborators.
 - Use Conventional Commits: `type(scope): subject`, for example
   `fix(agent): retry the runner config fetch`.
 
+## Before you commit
+
+Run `pre-commit install` once after cloning any hatchrun repository.
+The hook runs gitleaks on staged changes with the rules in the
+repository's `.gitleaks.toml` and stops the commit when it finds a
+secret or a Cloudflare or AWS account ID. CI scans the full history
+with the same rules. Pass account IDs through CI secrets or variables;
+a finding that is not a secret goes in `.gitleaksignore` by
+fingerprint, with a comment saying why.
+
 ## Pull requests
 
 - Open an issue for anything larger than a small fix, so the approach
